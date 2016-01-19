@@ -12,6 +12,7 @@
 		C47BEFDB1C4E373B004E4E0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47BEFD91C4E373B004E4E0C /* Main.storyboard */; };
 		C47BEFDD1C4E373B004E4E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47BEFDC1C4E373B004E4E0C /* Assets.xcassets */; };
 		C47BEFE01C4E373B004E4E0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47BEFDE1C4E373B004E4E0C /* LaunchScreen.storyboard */; };
+		C47BEFE81C4E3B86004E4E0C /* Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = C47BEFE71C4E3B86004E4E0C /* Scene.scn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C47BEFDC1C4E373B004E4E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C47BEFDF1C4E373B004E4E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C47BEFE11C4E373B004E4E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C47BEFE71C4E3B86004E4E0C /* Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Scene.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				C47BEFD51C4E373B004E4E0C /* AppDelegate.swift */,
 				C47BEFD71C4E373B004E4E0C /* ViewController.swift */,
+				C47BEFE71C4E3B86004E4E0C /* Scene.scn */,
 				C47BEFD91C4E373B004E4E0C /* Main.storyboard */,
 				C47BEFDC1C4E373B004E4E0C /* Assets.xcassets */,
 				C47BEFDE1C4E373B004E4E0C /* LaunchScreen.storyboard */,
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C47BEFE01C4E373B004E4E0C /* LaunchScreen.storyboard in Resources */,
+				C47BEFE81C4E3B86004E4E0C /* Scene.scn in Resources */,
 				C47BEFDD1C4E373B004E4E0C /* Assets.xcassets in Resources */,
 				C47BEFDB1C4E373B004E4E0C /* Main.storyboard in Resources */,
 			);

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>VR_Toolkit.xcscheme</key>
+		<key>VRPlay.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>C47BEFD11C4E373B004E4E0C</key>
+		<key>2BBF857C22384F1D00411FEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2BBF859022384F2000411FEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2BBF859B22384F2000411FEE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

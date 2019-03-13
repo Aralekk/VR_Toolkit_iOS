@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZPL-YY-jj4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1Ng-64-ILp">
+            <objects>
+                <viewController id="ZPL-YY-jj4" customClass="VRViewController" customModule="VRPlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AHT-4D-SxG"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZPG-ir-AvD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i2s-xd-DlV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dg8-ot-1OB">
+                                <rect key="frame" x="0.0" y="343.5" width="375" height="323.5"/>
+                            </sceneKitView>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFZ-kT-SWC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="323.5"/>
+                            </sceneKitView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dg8-ot-1OB" firstAttribute="trailing" secondItem="NJP-C0-r0K" secondAttribute="trailing" id="7nK-R2-mJk"/>
+                            <constraint firstItem="Dg8-ot-1OB" firstAttribute="width" secondItem="uFZ-kT-SWC" secondAttribute="width" id="CT9-Z5-ypt"/>
+                            <constraint firstItem="uFZ-kT-SWC" firstAttribute="top" secondItem="NJP-C0-r0K" secondAttribute="top" id="S3G-TQ-3hy"/>
+                            <constraint firstItem="uFZ-kT-SWC" firstAttribute="trailing" secondItem="NJP-C0-r0K" secondAttribute="trailing" id="TVq-Td-Wj9"/>
+                            <constraint firstItem="Dg8-ot-1OB" firstAttribute="leading" secondItem="NJP-C0-r0K" secondAttribute="leading" id="UxI-vh-fqS"/>
+                            <constraint firstItem="Dg8-ot-1OB" firstAttribute="top" secondItem="uFZ-kT-SWC" secondAttribute="bottom" id="ZsE-u3-vQ5"/>
+                            <constraint firstItem="Dg8-ot-1OB" firstAttribute="height" secondItem="uFZ-kT-SWC" secondAttribute="height" id="eTj-cQ-EBJ"/>
+                            <constraint firstItem="NJP-C0-r0K" firstAttribute="bottom" secondItem="Dg8-ot-1OB" secondAttribute="bottom" id="jRP-dP-SYv"/>
+                            <constraint firstItem="uFZ-kT-SWC" firstAttribute="leading" secondItem="NJP-C0-r0K" secondAttribute="leading" id="nHg-e6-aDs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NJP-C0-r0K"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="leftSceneView" destination="Dg8-ot-1OB" id="CxO-gh-6qL"/>
+                        <outlet property="rightSceneView" destination="uFZ-kT-SWC" id="cFB-fQ-87a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Vp-BE-T7t" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098" y="99"/>
+        </scene>
+    </scenes>
+</document>

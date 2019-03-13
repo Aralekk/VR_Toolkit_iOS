@@ -52,8 +52,8 @@ class VRScene: SCNScene {
         let rightCamera = SCNCamera()
         
         // Mi VR Play 2 FOV: 93 degrees.
-        leftCamera.fieldOfView = 93
-        rightCamera.fieldOfView = 93
+        leftCamera.fieldOfView = 80
+        rightCamera.fieldOfView = 80
         
         leftCamera.zFar = zFar
         rightCamera.zFar = zFar

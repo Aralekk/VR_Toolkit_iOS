@@ -39,15 +39,9 @@ class VRScene: SCNScene {
     
     var delegate: VRSceneDelegate?
     
-    func setup(leftEyeView: SCNView, rightEyeView: SCNView) {
+    func setup() {
         // initialize the 3D Space and Cameras
 
-        leftEyeView.scene = self
-        rightEyeView.scene = self
-        
-        leftEyeView.pointOfView = leftCameraNode
-        rightEyeView.pointOfView = rightCameraNode
-        
         // Create cameras
         let camX = 0.0 as Float
         let camY = 0.0 as Float
@@ -56,6 +50,10 @@ class VRScene: SCNScene {
         
         let leftCamera = SCNCamera()
         let rightCamera = SCNCamera()
+        
+        // Mi VR Play 2 FOV: 93 degrees.
+        leftCamera.fieldOfView = 93
+        rightCamera.fieldOfView = 93
         
         leftCamera.zFar = zFar
         rightCamera.zFar = zFar
@@ -202,6 +200,7 @@ class VRScene: SCNScene {
     
     func updateCameraRotation(eulerAngles: (roll: Double, pitch: Double, yaw: Double)) {
         
+
         self.cameraRollNode!.eulerAngles.x = Float(eulerAngles.roll)
         self.cameraPitchNode!.eulerAngles.z = Float(eulerAngles.pitch)
         self.cameraYawNode!.eulerAngles.y = Float(eulerAngles.yaw)

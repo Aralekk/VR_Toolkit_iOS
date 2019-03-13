@@ -31,13 +31,18 @@ class VRViewController: UIViewController, SCNSceneRendererDelegate, VRSceneDeleg
         
         // Create Scene
         scene = VRScene(named: "Scene.scn")!
-        scene.setup(leftEyeView: leftSceneView, rightEyeView: rightSceneView)
+        scene.setup()
         scene.delegate = self
         
+        leftSceneView.scene = scene
+        rightSceneView.scene = scene
+        
+        leftSceneView.pointOfView = scene.leftCameraNode
+        rightSceneView.pointOfView = scene.rightCameraNode
         
         // Respond to user head movement. Refreshes the position of the camera 60 times per second.
         motionManager = CMMotionManager()
-        motionManager?.deviceMotionUpdateInterval = 1.0 / 60.0
+        motionManager?.deviceMotionUpdateInterval = 1.0 / 90.0
         motionManager?.startDeviceMotionUpdates(using: .xArbitraryCorrectedZVertical)
         
         leftSceneView?.delegate = self
